@@ -111,7 +111,12 @@ class BinaryTree
             cout << ptr->info << " ";
         }
     }
-
-
 };
+
+int main()
+{
+    BinaryTree x;
+    
+}
+
 
