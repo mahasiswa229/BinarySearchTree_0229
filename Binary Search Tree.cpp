@@ -35,6 +35,16 @@ class BinaryTree
         newNode->leftchild = nullptr;
         newNode->rightchild = nullptr;
 
+        Node* parent = nullptr;
+        Node* currentNode = nullptr;
+        search(element,parent,currentNode);
+        |
+        if (parent = nullptr)
+        {
+            root = newNode;
+            return;
+        }
+
         
     }
 };
