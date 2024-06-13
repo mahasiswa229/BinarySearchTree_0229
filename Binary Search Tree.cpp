@@ -98,7 +98,19 @@ class BinaryTree
         }
     }
 
-  
+    void postorder(Node* ptr)
+    {
+        if(ROOT==NULL)
+        {
+            cout << " Tree is emptry" << endl;
+        }
+        if(ptr != NULL)
+        {
+            postorder(ptr->leftchild);
+            postorder(ptr->rightchild);
+            cout << ptr->info << " ";
+        }
+    }
 
 
 };
